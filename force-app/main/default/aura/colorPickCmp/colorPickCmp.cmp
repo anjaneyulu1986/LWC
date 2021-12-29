@@ -1,0 +1,15 @@
+<aura:component implements="flexiPage:availableForAllPageTypes">
+
+<aura:attribute name="colorCodeText" type="String"/>
+<lightning:card title="Color change text">
+
+<aura:set attribute="actions">
+
+<c:colorPicker oncolorChange="{!c.handleColorChange}"/>
+</aura:set>
+<div>
+
+    <p> <b style="{!'color:'+v.colorCodeText}">This is the text to verify the selected color.</b></p>
+</div>
+</lightning:card>
+</aura:component>

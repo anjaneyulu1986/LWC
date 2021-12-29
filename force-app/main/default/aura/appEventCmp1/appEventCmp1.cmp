@@ -1,0 +1,11 @@
+<aura:component >
+	
+    <aura:attribute name="message" type="String" default=""/>
+    <aura:registerEvent name="appEvent" type="c:appEvent"/>
+    <div>
+        <lightning:input type="text" label="Enter Message" value="{!v.message}"/>
+        <br/>
+        
+        <lightning:button label="Fire" onclick="{!c.handleEvent}"/>
+    </div>
+</aura:component>

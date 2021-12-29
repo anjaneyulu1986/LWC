@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable" >
+	<aura:attribute name="message" type="String"/>
+    <aura:attribute name="number" type="Integer"/>
+    
+    <aura:handler name="cmpEvent" event="c:cmpEvent" action="{!c.handleEvent}"/>
+    <div>
+    
+        Received values are ::<br/>
+        {!v.message} :: {!v.number}
+    </div>
+
+    <c:eventCmp1/>
+</aura:component>

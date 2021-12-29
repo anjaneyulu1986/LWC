@@ -1,0 +1,26 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	
+    <lightning:notificationsLibrary aura:id="notification"/>
+    <lightning:navigation aura:id="navigation"/>
+    <aura:handler name="init" value="{!this}" action="{!c.handleInit}"/>
+    
+    <force:recordEdit aura:id="edit" recordId="{!v.recordId}"/>
+<lightning:button label="Save" onclick="{!c.save}"/>
+    
+   <!-- <lightning:recordEditForm recordId="{!v.recordId}" objectApiName="Account" onsubmit="{!c.handleSubmit}" onsuccess="{!c.handleSuccess}">
+    
+        <div class="slds-grid">
+        
+            <lightning:inputField fieldName="Name"/>
+            <lightning:inputField fieldName="Phone"/>
+            <lightning:inputField fieldName="Type"/>
+            <lightning:inputField fieldName="Industry"/>
+        
+        </div>
+    
+        <div>
+        <lightning:button class="slds-m-top_small" type="submit" label="Save" />
+        </div>
+    
+    </lightning:recordEditForm>-->
+</aura:component>

@@ -1,0 +1,46 @@
+<aura:component implements="force:appHostable" controller="AccountSearchController">
+    <aura:attribute name="searchString" type="String" default=""/>
+    <aura:attribute name="accountList" type="List"/>
+    <aura:attribute name="isResultShow" type="Boolean" default="false"/>
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>    
+    <lightning:notificationsLibrary aura:id="notification"/>
+    <div>
+        <lightning:spinner aura:id="spinner" alternativeText="Loading" size="medium" class="slds-hide"/>
+    </div>
+    <br/>
+    
+    Search Account : <lightning:input type="text" value="{!v.searchString}"/>
+    <br/>
+    <lightning:button label="Search" onclick="{!c.fetchAccounts}"/>
+    <br/>
+    <aura:if isTrue="{!v.isResultShow}">
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Industry</th>
+                    <th>Type</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <aura:iteration items="{!v.accountList}" var="acc">  
+                    <tr>
+                        <td>{!acc.Name}</td>
+                        <td>{!acc.Industry}</td>
+                        <td>{!acc.Type}</td>
+                        <td>{!acc.Phone}</td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+        
+    </div>
+        <aura:set attribute="else">
+        There are not records found...
+        </aura:set>
+    </aura:if>
+</aura:component>

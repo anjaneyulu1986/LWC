@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract</fullName>
+    <active>true</active>
+    <label>Contract</label>
+    <picklistValues>
+        <picklist>Technologies__c</picklist>
+        <values>
+            <fullName>BigData</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hadoop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Java</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

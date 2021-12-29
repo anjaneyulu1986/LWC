@@ -1,0 +1,11 @@
+<template>
+    
+    <lightning-card title="Account Creation using JS API">
+
+        <lightning-input type='text' label='name' onchange={handleChange}></lightning-input>
+        <lightning-input type='text' label='phone' onchange={handleChange}></lightning-input>
+        <lightning-input type='text' label='industry' onchange={handleChange}></lightning-input>
+
+        <lightning-button label="Create Account" onclick={createAccountRecord}></lightning-button>
+    </lightning-card>
+</template>

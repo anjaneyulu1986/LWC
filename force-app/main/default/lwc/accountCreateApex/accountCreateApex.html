@@ -1,0 +1,12 @@
+<template>
+    
+    <div>
+        <lightning-input type='text' label='Account Name' onchange={handleNameChange}></lightning-input>
+        <lightning-input type='text' label='Account Phone' onchange={handlePhoneChange}></lightning-input>
+
+        <lightning-combobox name='Type' label="Account Type" value={value} options={typeValues.data} onchange={handleTypeChange}></lightning-combobox>
+
+        <lightning-button label="Create Account" onclick={handleCreateAccount} variant="Brand"></lightning-button>
+
+    </div>
+</template>

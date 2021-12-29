@@ -1,0 +1,33 @@
+<template>
+    
+    <div class="slds-box slds-theme_shade slds-theme_alert-texture">
+    <p>{disText}</p>
+<br/>
+<lightning-input type="number"  value={num1} label="Enter Num1" onchange={handleNum1Change}></lightning-input>
+<lightning-input type="number" value={num2} label = "Enter Num2" onchange={handleNum2Change}></lightning-input>
+<br/>
+<lightning-button label="Add" onclick={addNumbers}></lightning-button><br/>
+
+Result is  : {result}
+
+  </div>
+
+
+  <div>
+<p>Event Example</p>
+<p>Chile Message is : {message}</p>
+<c-custom-evt-child message="My initial message" onmessage={handleMssageEvent}></c-custom-evt-child>
+
+  </div>
+
+  <div>
+<p>Lightning Record Form Example</p>
+
+<c-load-cmp object-api-name="Account" record-id="0015g00000Xkg4XAAR"></c-load-cmp>
+
+  </div>
+  <div>
+<p> View Form</p>
+<c-view-accountcmp object-api-name="Account" record-id="0015g00000Xkg4XAAR"></c-view-accountcmp>
+  </div>
+</template>

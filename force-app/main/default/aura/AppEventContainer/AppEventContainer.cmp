@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable" >
+	
+    <c:appEventCmp2/>
+    <c:appEventCmp1/>
+</aura:component>

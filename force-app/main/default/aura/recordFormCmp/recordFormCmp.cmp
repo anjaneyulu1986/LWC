@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	
+    <aura:attribute name="fields" type="List" default="['Name','Type','Phone','Industry']"/>
+    <lightning:notificationsLibrary aura:id = "notification"/>
+    <lightning:recordForm fields="{!v.fields}" layoutType="Full" objectApiName="Account" recordId="{!v.recordId}" onsuccess="{!c.handleSuccess}"></lightning:recordForm>
+</aura:component>

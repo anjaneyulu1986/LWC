@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Case_Priorities_to_Fire</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case Priorities to Fire</shortDescription>
+        <value>High</value>
+    </labels>
+    <labels>
+        <fullName>Display_Text</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Display Text</shortDescription>
+        <value>Addition of 2 Numbers</value>
+    </labels>
+    <labels>
+        <fullName>System_Admin_Profile</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>System Admin Profile</shortDescription>
+        <value>System Administrator</value>
+    </labels>
+</CustomLabels>

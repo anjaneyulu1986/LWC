@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	
+    <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Account">
+    
+        <div class="slds-grid">
+        
+            <lightning:outputField fieldName="Name"/>
+            <lightning:outputField fieldName="Type"/>
+            <lightning:outputField fieldName="Phone"/>
+            <lightning:outputField fieldName="Industry"/>
+        
+        </div>
+    
+    </lightning:recordViewForm>
+</aura:component>

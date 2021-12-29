@@ -1,0 +1,12 @@
+<template>
+    
+<div><p>{title}</p></div>
+<div>
+    <c-calculation-result result={result}></c-calculation-result>
+    <br/>
+    <p>
+        <lightning-input value={firstNumber} label="First Number" name="fNumber" onchange={handleChange}></lightning-input><br/>
+        <lightning-input value={secondNumber} label="Second Number" name="sNumber" onchange={handleChange}></lightning-input>
+    </p>
+</div>
+</template>

@@ -1,0 +1,15 @@
+<aura:component controller="AdditionController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute name="num1" type="Integer" default="0"/>
+    <aura:attribute name="num2" type="Integer" default="0"/>
+    <aura:attribute name="result" type="Integer" default="0"/>
+    <div>
+        <lightning:input type="number" value="{!v.num1}" label="Enter Number1"/>
+        <br/>
+        <lightning:input type="number" value="{!v.num2}" label="Enter Number2"/>
+        <br/>
+        <lightning:button label="Calculate" variant="Brand" onclick="{!c.performAddition}"/>
+        <br/>
+        <lightning:formattednumber value="{!v.result}"/>
+    </div>
+</aura:component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Types</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Type__c), ISPICKVAL(PRIORVALUE(Type__c), &quot;A&quot;)  )</errorConditionFormula>
+    <errorMessage>Customer Type &apos;A&apos; cannot be changed.</errorMessage>
+</ValidationRule>

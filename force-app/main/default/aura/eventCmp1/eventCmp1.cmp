@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="message" type="String"/>
+    <aura:attribute name="number" type="Integer"/>
+    <aura:registerEvent name ="cmpEvent" type="c:cmpEvent"/>
+    <div>
+    <lightning:input name="Message" label="Enter Message" value="{!v.message}"/>
+    <lightning:input name="Number" label="Enter Number" value="{!v.number}"/>
+        <br/>
+        <lightning:button variant="brand" label="Fire" title="Brand action" onclick="{! c.handleClick }" />
+    </div>
+</aura:component>
